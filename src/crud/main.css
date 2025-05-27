@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #4CAF50;
+    --primary-hover: #45a049;
+    --text-color: #333;
+    --error-color: #ff0000;
+}
+
+.app {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.notes-grid {
+    columns: 300px auto;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+
+.loading, .error {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.error {
+    color: var(--error-color);
+}
+
+
+
+@media (max-width: 768px) {
+    .notes-grid {
+        columns: 1;
+    }
+}

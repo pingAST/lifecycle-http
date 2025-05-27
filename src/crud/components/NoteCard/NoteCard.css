@@ -1,0 +1,62 @@
+.note-card {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    padding-top: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    break-inside: avoid;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.note-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.note-card p {
+    margin: 0;
+    flex-grow: 1;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+    font-size: 15px;
+    color: var(--text-color);
+    hyphens: auto;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.delete-btn:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+.delete-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #666;
+    transition: fill 0.3s;
+}
+
+.delete-btn:hover svg {
+    fill: var(--error-color);
+}

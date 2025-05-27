@@ -1,0 +1,38 @@
+.header {
+    margin-bottom: 30px;
+}
+
+.notes-title {
+    margin-right: 15px;
+    vertical-align: middle;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.refresh-btn {
+    background: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding: 8px;
+    vertical-align: middle;
+    transition: background 0.3s;
+}
+
+.refresh-btn svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+.refresh-btn:hover {
+    background: var(--primary-hover);
+}
+
+.arrows-icon {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
